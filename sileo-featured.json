@@ -1,10 +1,10 @@
 {
 	"class": "FeaturedBannersView",
-	"itemSize": "{296, 148}",
+	"itemSize": "{263, 148}",
 	"itemCornerRadius": 10,
 	"banners": [
 		{
-			"url": "https://raw.githubusercontent.com/uchks/repo.me/master/assets/Banners/RepoHeader.png",
+			"url": "https://repo.adriancastro.dev/assets/Banners/RepoHeader.png",
 			"title": "Gonerino",
 			"package": "dev.adrian.gonerino",
 			"hideShadow": false

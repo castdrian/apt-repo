@@ -1,0 +1,63 @@
+{
+    "minVersion": "0.1",
+    "headerImage": "https://repo.adriancastro.dev/assets/Banners/RepoHeader.png",
+    "tintColor": "#2CB1BE",
+    "tabs": [
+        {
+            "tabname": "Details",
+            "views": [
+                {
+                    "title": "Gonerino",
+                    "useBoldText": true,
+                    "useBottomMargin": false,
+                    "class": "DepictionSubheaderView"
+                },
+                {
+                    "markdown": "A YouTube tweak that allows you to block specific channels and automatically remove their videos from your feed.",
+                    "useSpacing": true,
+                    "class": "DepictionMarkdownView"
+                },
+                {
+                    "title": "Features",
+                    "class": "DepictionHeaderView"
+                },
+                {
+                    "markdown": "* Block channels directly from video context menu\n* Automatically removes blocked channels' videos from your feed\n* Block \"People also watched this video\" and \"You might also like this\" suggestions",
+                    "useSpacing": true,
+                    "class": "DepictionMarkdownView"
+                },
+                {
+                    "title": "Compatibility",
+                    "class": "DepictionHeaderView"
+                },
+                {
+                    "markdown": "* iOS: 15.8.3+\n* YouTube: 19.42.1+\n* Injection Methods:\n  * ElleKit (Dopamine)\n  * TrollFools (TrollStore)\n  * Sideloaded IPA (MobileSubstrate)",
+                    "useSpacing": true,
+                    "class": "DepictionMarkdownView"
+                },
+                {
+                    "title": "Dependencies",
+                    "text": "YouGroupSettings",
+                    "class": "DepictionTableTextView"
+                },
+                {
+                    "spacing": 16,
+                    "class": "DepictionSpacerView"
+                },
+                {
+                    "class": "DepictionTableButtonView",
+                    "title": "View Source Code",
+                    "action": "https://github.com/castdrian/Gonerino"
+                }
+            ],
+            "class": "DepictionStackView"
+        },
+        {
+            "tabname": "Changelog",
+            "views": [
+            ],
+            "class": "DepictionStackView"
+        }
+    ],
+    "class": "DepictionTabView"
+} 

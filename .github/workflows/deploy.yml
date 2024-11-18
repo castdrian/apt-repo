@@ -34,12 +34,28 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y apt-utils xz-utils zstd bzip2 lz4 gzip
           mkdir -p packages
-          
+
       - name: Download package
         if: inputs.package_url != '' && inputs.package_name != ''
         run: |
           curl -L "${{ inputs.package_url }}" -o "packages/${{ inputs.package_name }}"
-          
+
+      - name: Update package version
+        if: inputs.package_url != '' && inputs.package_name != ''
+        run: |
+          dpkg-deb -f "packages/${{ inputs.package_name }}" > control.tmp
+
+          VERSION=$(grep "Version:" control.tmp | cut -d' ' -f2)
+          PACKAGE_ID=$(grep "Package:" control.tmp | cut -d' ' -f2)
+
+          if [ -f "depictions/web/$PACKAGE_ID/info.xml" ]; then
+            sed -i "s|<version>.*</version>|<version>$VERSION</version>|" "depictions/web/$PACKAGE_ID/info.xml"
+          else
+            echo "Warning: Depiction file not found for package $PACKAGE_ID"
+          fi
+
+          rm control.tmp
+
       - name: Import GPG key
         env:
           GPG_KEY: ${{ secrets.GPG_KEY }}
@@ -47,7 +63,7 @@ jobs:
           echo "$GPG_KEY" | gpg --import
           KEY_ID=$(gpg --list-secret-keys --keyid-format LONG | grep sec | cut -d'/' -f2 | cut -d' ' -f1)
           echo "GPG_KEY_ID=$KEY_ID" >> $GITHUB_ENV
-          
+
       - name: Update Repository
         env:
           GPG_KEY_ID: ${{ env.GPG_KEY_ID }}
@@ -56,24 +72,24 @@ jobs:
           ./update-repo.sh
 
       - name: Commit & Push changes
-        if: inputs.package_url != ''
+        if: inputs.package_url != '' && inputs.package_name != ''
         uses: EndBug/add-and-commit@v9
         with:
-          add: '.'
+          add: "."
           default_author: github_actions
           fetch: false
-          message: 'chore(repo): update packages [skip ci]'
+          message: "chore(repo): update packages [skip ci]"
           push: true
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        
+
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
-          
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 

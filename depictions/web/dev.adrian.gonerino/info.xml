@@ -1,0 +1,35 @@
+<package>
+	<id>com.castdrian.gonerino</id>
+	<name>Gonerino</name>
+	<version>0.3.4</version>
+	<compatibility>
+		<firmware>
+			<miniOS>15.8.3</miniOS>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>YouGroupSettings</package>
+	</dependencies>
+	<shortDescription>Block YouTube channels and remove their videos from your feed</shortDescription>
+	<descriptionlist>
+		<description>A YouTube tweak that allows you to block specific channels and automatically remove their videos from your feed.</description>
+		<description>Features:</description>
+		<description>• Block channels directly from video context menu</description>
+		<description>• Automatically removes blocked channels' videos from your feed</description>
+		<description>• Block "People also watched this video" and "You might also like this" suggestions</description>
+		<description>Compatibility:</description>
+		<description>• iOS: 15.8.3+</description>
+		<description>• YouTube: 19.42.1+</description>
+		<description>• Injection Methods: ElleKit (Dopamine), TrollFools (TrollStore), Sideloaded IPA (MobileSubstrate)</description>
+	</descriptionlist>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links>
+		<link>
+			<name>Source Code</name>
+			<url>https://github.com/castdrian/Gonerino</url>
+			<iconclass>fa-brands fa-github</iconclass>
+		</link>
+	</links>
+</package> 
