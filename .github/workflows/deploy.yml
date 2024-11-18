@@ -74,14 +74,17 @@ jobs:
           ./update-repo.sh
 
       - name: Commit & Push changes
-        if: github.event_name == 'workflow_call'
         uses: EndBug/add-and-commit@v9
         with:
           add: "."
           default_author: github_actions
-          fetch: false
           message: "chore(repo): update packages [skip ci]"
           push: true
+
+      - name: Prepare for deployment
+        run: |
+          cp -r repo/* ./
+          rm -rf repo/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

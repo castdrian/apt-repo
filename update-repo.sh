@@ -3,9 +3,10 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-CONFIG_DIR="$SCRIPT_DIR/assets/repo"
+REPO_DIR="$SCRIPT_DIR/repo"
+CONFIG_DIR="$REPO_DIR/assets/repo"
 CONFIG_FILE="$CONFIG_DIR/repo.conf"
-PACKAGES_DIR="$SCRIPT_DIR/debs"
+PACKAGES_DIR="$REPO_DIR/debs"
 
 key_id=""
 
@@ -15,7 +16,7 @@ if [[ -n "${GPG_KEY_ID:-}" ]]; then
 fi
 
 update_repo() {
-    cd "$SCRIPT_DIR" || exit
+    cd "$REPO_DIR" || exit
     rm -f Packages* Contents-iphoneos-arm* Release* 2> /dev/null
 
     /usr/bin/apt-ftparchive packages "$PACKAGES_DIR" > Packages
