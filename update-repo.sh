@@ -19,13 +19,13 @@ update_repo() {
     cd "$REPO_DIR" || exit
     rm -f Packages* Contents-iphoneos-arm* Release* 2> /dev/null
 
-    /usr/bin/apt-ftparchive packages "$PACKAGES_DIR" > Packages
+    /usr/bin/apt-ftparchive packages --db /tmp/apt-ftparchive-db debs > Packages
     gzip -c9 Packages > Packages.gz
     xz -c9 Packages > Packages.xz
     zstd -c19 Packages > Packages.zst
     bzip2 -c9 Packages > Packages.bz2
 
-    /usr/bin/apt-ftparchive contents "$PACKAGES_DIR" > Contents-iphoneos-arm
+    /usr/bin/apt-ftparchive contents debs > Contents-iphoneos-arm
     bzip2 -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.bz2
     xz -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.xz
     xz -5fkev --format=lzma Contents-iphoneos-arm > Contents-iphoneos-arm.lzma
