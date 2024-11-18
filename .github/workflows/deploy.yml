@@ -1,13 +1,15 @@
 name: Deploy Repository
 
 on:
+  push:
+    branches: [main]
   workflow_call:
     inputs:
       package_url:
-        required: false
+        required: true
         type: string
       package_name:
-        required: false
+        required: true
         type: string
   workflow_dispatch:
 
@@ -33,17 +35,17 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y apt-utils xz-utils zstd bzip2 lz4 gzip
-          mkdir -p packages
+          mkdir -p debs
 
       - name: Download package
-        if: inputs.package_url != '' && inputs.package_name != ''
+        if: github.event_name == 'workflow_call'
         run: |
-          curl -L "${{ inputs.package_url }}" -o "packages/${{ inputs.package_name }}"
+          curl -L "${{ inputs.package_url }}" -o "debs/${{ inputs.package_name }}"
 
       - name: Update package version
-        if: inputs.package_url != '' && inputs.package_name != ''
+        if: github.event_name == 'workflow_call'
         run: |
-          dpkg-deb -f "packages/${{ inputs.package_name }}" > control.tmp
+          dpkg-deb -f "debs/${{ inputs.package_name }}" > control.tmp
 
           VERSION=$(grep "Version:" control.tmp | cut -d' ' -f2)
           PACKAGE_ID=$(grep "Package:" control.tmp | cut -d' ' -f2)
@@ -72,7 +74,7 @@ jobs:
           ./update-repo.sh
 
       - name: Commit & Push changes
-        if: inputs.package_url != '' && inputs.package_name != ''
+        if: github.event_name == 'workflow_call'
         uses: EndBug/add-and-commit@v9
         with:
           add: "."

@@ -5,7 +5,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CONFIG_DIR="$SCRIPT_DIR/assets/repo"
 CONFIG_FILE="$CONFIG_DIR/repo.conf"
-PACKAGES_DIR="$SCRIPT_DIR/packages"
+PACKAGES_DIR="$SCRIPT_DIR/debs"
 
 key_id=""
 
