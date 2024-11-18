@@ -5,7 +5,7 @@ Section: Tweaks
 Maintainer: Adrian Castro
 Installed-Size: 92
 Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/dev.adrian.gonerino_0.3.5_iphoneos-arm.deb
+Filename: ./debs/dev.adrian.gonerino_0.3.5_iphoneos-arm.deb
 Size: 12900
 MD5sum: 32ace5b630613d04b1a194fce9d86fb8
 SHA1: f1905f160313794b1b1782f628120e8b548c7ef6
