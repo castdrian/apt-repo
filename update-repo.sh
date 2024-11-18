@@ -4,7 +4,6 @@ set -euo pipefail
 
 CONFIG_DIR="./assets/repo"
 CONFIG_FILE="$CONFIG_DIR/repo.conf"
-GPG_KEY_FILE=""
 key_id=""
 
 if [[ -n "${GPG_KEY_ID:-}" ]]; then
@@ -13,23 +12,16 @@ if [[ -n "${GPG_KEY_ID:-}" ]]; then
 fi
 
 update_repo() {
-    local apt_ftparchive="./apt-ftparchive"
-
-    if [[ ! -f "$apt_ftparchive" ]]; then
-        echo "Error: apt-ftparchive not found."
-        exit 1
-    fi
-
     cd "$(dirname "$0")" || exit
     rm -f Packages* Contents-iphoneos-arm* Release* 2> /dev/null
 
-    $apt_ftparchive packages ./packages > Packages
+    /usr/bin/apt-ftparchive packages ./packages > Packages
     gzip -c9 Packages > Packages.gz
     xz -c9 Packages > Packages.xz
     zstd -c19 Packages > Packages.zst
     bzip2 -c9 Packages > Packages.bz2
 
-    $apt_ftparchive contents ./packages > Contents-iphoneos-arm
+    /usr/bin/apt-ftparchive contents ./packages > Contents-iphoneos-arm
     bzip2 -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.bz2
     xz -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.xz
     xz -5fkev --format=lzma Contents-iphoneos-arm > Contents-iphoneos-arm.lzma
@@ -37,7 +29,7 @@ update_repo() {
     gzip -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.gz
     zstd -c19 Contents-iphoneos-arm > Contents-iphoneos-arm.zst
 
-    $apt_ftparchive release -c "$CONFIG_FILE" . > Release
+    /usr/bin/apt-ftparchive release -c "$CONFIG_FILE" . > Release
 
     gpg -abs -u "$key_id" -o Release.gpg Release
 

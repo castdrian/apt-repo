@@ -32,16 +32,13 @@ jobs:
       - name: Download package
         if: inputs.package_url != '' && inputs.package_name != ''
         run: |
-          mkdir -p packages
           curl -L "${{ inputs.package_url }}" -o "packages/${{ inputs.package_name }}"
 
       - name: Setup environment
         run: |
           sudo apt-get update
           sudo apt-get install -y apt-utils xz-utils zstd bzip2 lz4 gzip
-          wget -q https://apt.procurs.us/apt-ftparchive
-          chmod +x apt-ftparchive
-
+          
       - name: Import GPG key
         env:
           GPG_KEY: ${{ secrets.GPG_KEY }}
@@ -53,9 +50,10 @@ jobs:
       - name: Update Repository
         env:
           GPG_KEY_ID: ${{ env.GPG_KEY_ID }}
+          CI: true
         run: |
-          chmod +x updaterepo.sh
-          ./updaterepo.sh
+          chmod +x update-repo.sh
+          ./update-repo.sh
 
       - name: Commit & Push changes
         if: inputs.package_url != ''
