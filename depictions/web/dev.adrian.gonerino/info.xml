@@ -1,7 +1,7 @@
 <package>
 	<id>com.castdrian.gonerino</id>
 	<name>Gonerino</name>
-	<version>0.3.4</version>
+	<version>0.3.5</version>
 	<compatibility>
 		<firmware>
 			<miniOS>15.8.3</miniOS>
