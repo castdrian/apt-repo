@@ -4,6 +4,7 @@ set -euo pipefail
 
 CONFIG_DIR="./assets/repo"
 CONFIG_FILE="$CONFIG_DIR/repo.conf"
+PACKAGES_DIR="./packages"
 GPG_KEY_FILE=""
 key_id=""
 
@@ -128,13 +129,13 @@ update_repo() {
     cd "$(dirname "$0")" || exit
     rm -f Packages* Contents-iphoneos-arm* Release* 2> /dev/null
 
-    $apt_ftparchive packages ./debians > Packages
+    $apt_ftparchive packages ./packages > Packages
     gzip -c9 Packages > Packages.gz
     xz -c9 Packages > Packages.xz
     zstd -c19 Packages > Packages.zst
     bzip2 -c9 Packages > Packages.bz2
 
-    $apt_ftparchive contents ./debians > Contents-iphoneos-arm
+    $apt_ftparchive contents ./packages > Contents-iphoneos-arm
     bzip2 -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.bz2
     xz -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.xz
     xz -5fkev --format=lzma Contents-iphoneos-arm > Contents-iphoneos-arm.lzma

@@ -1,0 +1,13 @@
+name: Remote Repository Update
+
+on:
+  repository_dispatch:
+    types: [package-update]
+
+jobs:
+  trigger-deploy:
+    uses: ./.github/workflows/deploy.yml
+    with:
+      package_url: ${{ github.event.client_payload.package_url }}
+      package_name: ${{ github.event.client_payload.package_name }}
+    secrets: inherit
