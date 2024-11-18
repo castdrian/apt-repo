@@ -29,15 +29,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download package
-        if: inputs.package_url != '' && inputs.package_name != ''
-        run: |
-          curl -L "${{ inputs.package_url }}" -o "packages/${{ inputs.package_name }}"
-
       - name: Setup environment
         run: |
           sudo apt-get update
           sudo apt-get install -y apt-utils xz-utils zstd bzip2 lz4 gzip
+          mkdir -p packages
+          
+      - name: Download package
+        if: inputs.package_url != '' && inputs.package_name != ''
+        run: |
+          curl -L "${{ inputs.package_url }}" -o "packages/${{ inputs.package_name }}"
           
       - name: Import GPG key
         env:
@@ -50,11 +51,7 @@ jobs:
       - name: Update Repository
         env:
           GPG_KEY_ID: ${{ env.GPG_KEY_ID }}
-          CI: true
         run: |
-          pwd
-          ls -la
-          ls -la packages/
           chmod +x update-repo.sh
           ./update-repo.sh
 
