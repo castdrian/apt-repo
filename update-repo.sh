@@ -2,8 +2,11 @@
 
 set -euo pipefail
 
-CONFIG_DIR="./assets/repo"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CONFIG_DIR="$SCRIPT_DIR/assets/repo"
 CONFIG_FILE="$CONFIG_DIR/repo.conf"
+PACKAGES_DIR="$SCRIPT_DIR/packages"
+
 key_id=""
 
 if [[ -n "${GPG_KEY_ID:-}" ]]; then
@@ -12,16 +15,16 @@ if [[ -n "${GPG_KEY_ID:-}" ]]; then
 fi
 
 update_repo() {
-    cd "$(dirname "$0")" || exit
+    cd "$SCRIPT_DIR" || exit
     rm -f Packages* Contents-iphoneos-arm* Release* 2> /dev/null
 
-    /usr/bin/apt-ftparchive packages ./packages > Packages
+    /usr/bin/apt-ftparchive packages "$PACKAGES_DIR" > Packages
     gzip -c9 Packages > Packages.gz
     xz -c9 Packages > Packages.xz
     zstd -c19 Packages > Packages.zst
     bzip2 -c9 Packages > Packages.bz2
 
-    /usr/bin/apt-ftparchive contents ./packages > Contents-iphoneos-arm
+    /usr/bin/apt-ftparchive contents "$PACKAGES_DIR" > Contents-iphoneos-arm
     bzip2 -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.bz2
     xz -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.xz
     xz -5fkev --format=lzma Contents-iphoneos-arm > Contents-iphoneos-arm.lzma

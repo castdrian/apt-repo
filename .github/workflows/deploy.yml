@@ -52,6 +52,9 @@ jobs:
           GPG_KEY_ID: ${{ env.GPG_KEY_ID }}
           CI: true
         run: |
+          pwd
+          ls -la
+          ls -la packages/
           chmod +x update-repo.sh
           ./update-repo.sh
 
