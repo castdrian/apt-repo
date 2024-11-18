@@ -51,7 +51,7 @@ jobs:
       - name: Update Repository
         run: |
           chmod +x updaterepo.sh
-          ./updaterepo.sh
+          sudo ./updaterepo.sh
 
       - name: Commit & Push changes
         if: inputs.package_url != ''
