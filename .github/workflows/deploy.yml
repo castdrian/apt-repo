@@ -1,8 +1,6 @@
 name: Deploy Repository
 
 on:
-  push:
-    branches: [main]
   workflow_call:
     inputs:
       package_url:

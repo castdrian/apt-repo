@@ -4,7 +4,6 @@ set -euo pipefail
 
 CONFIG_DIR="./assets/repo"
 CONFIG_FILE="$CONFIG_DIR/repo.conf"
-PACKAGES_DIR="./packages"
 GPG_KEY_FILE=""
 key_id=""
 
