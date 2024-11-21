@@ -18,17 +18,6 @@ if [[ -n "${GPG_KEY_ID:-}" ]]; then
     key_id="$GPG_KEY_ID"
 fi
 
-process_packages() {
-    while read -r line; do
-        echo "$line"
-        if [[ -z "$line" ]]; then
-            package_id=$(grep "Package:" -B 10 | tail -n 1 | cut -d' ' -f2)
-            echo "Depiction: $REPO_URL/depictions/web/?p=$package_id"
-            echo "SileoDepiction: $REPO_URL/depictions/native/$package_id/depiction.json"
-        fi
-    done
-}
-
 echo "Current directory: $(pwd)"
 echo "Changing to repo directory: $REPO_DIR"
 cd "$REPO_DIR" || exit 1
@@ -43,7 +32,7 @@ echo "Cleaning old files..."
 rm -f Packages Packages.{xz,gz,bz2,zst} Release{,.gpg} InRelease
 
 echo "Generating Packages file..."
-$APT_FTPARCHIVE packages ./debs | process_packages > Packages || exit 1
+$APT_FTPARCHIVE packages ./debs > Packages
 
 echo "Compressing files..."
 gzip -c9 Packages > Packages.gz
