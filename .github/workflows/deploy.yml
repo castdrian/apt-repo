@@ -34,18 +34,18 @@ jobs:
       - name: Download package
         if: inputs.package_url != ''
         run: |
-          curl -L "${{ inputs.package_url }}" -o "debs/${{ inputs.package_name }}"
+          curl -L "${{ inputs.package_url }}" -o "repo/debs/${{ inputs.package_name }}"
 
       - name: Update package version
         if: inputs.package_url != ''
         run: |
-          dpkg-deb -f "debs/${{ inputs.package_name }}" > control.tmp
+          dpkg-deb -f "repo/debs/${{ inputs.package_name }}" > control.tmp
 
           VERSION=$(grep "Version:" control.tmp | cut -d' ' -f2)
           PACKAGE_ID=$(grep "Package:" control.tmp | cut -d' ' -f2)
 
-          if [ -f "depictions/web/$PACKAGE_ID/info.xml" ]; then
-            sed -i "s|<version>.*</version>|<version>$VERSION</version>|" "depictions/web/$PACKAGE_ID/info.xml"
+          if [ -f "repo/depictions/web/$PACKAGE_ID/info.xml" ]; then
+            sed -i "s|<version>.*</version>|<version>$VERSION</version>|" "repo/depictions/web/$PACKAGE_ID/info.xml"
           else
             echo "Warning: Depiction file not found for package $PACKAGE_ID"
           fi
