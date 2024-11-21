@@ -9,10 +9,8 @@ CONFIG_FILE="$CONFIG_DIR/repo.conf"
 REPO_URL="https://repo.adriancastro.dev"
 
 key_id=""
-
 if [[ -n "${GPG_KEY_ID:-}" ]]; then
     key_id="$GPG_KEY_ID"
-    echo "Using GPG key ID from environment: $key_id"
 fi
 
 update_repo() {
@@ -21,22 +19,24 @@ update_repo() {
 
     /usr/bin/apt-ftparchive packages ./debs > Packages.tmp
 
-    while IFS= read -r line; do
-        if [[ $line =~ ^Package:\ (.*)$ ]]; then
-            pkg_id="${BASH_REMATCH[1]}"
-            
-            has_depiction=$(grep -A 10 "^Package: $pkg_id$" Packages.tmp | grep -c "^Depiction:" || true)
-            has_sileo=$(grep -A 10 "^Package: $pkg_id$" Packages.tmp | grep -c "^SileoDepiction:" || true)
-            
-            if [[ $has_depiction -eq 0 && -d "depictions/web/$pkg_id" ]]; then
-                echo "Depiction: $REPO_URL/depictions/web/?p=$pkg_id" >> Packages.tmp
+    {
+        while IFS= read -r line; do
+            echo "$line"
+            if [[ $line =~ ^Package:\ (.*)$ ]]; then
+                pkg_id="${BASH_REMATCH[1]}"
+                
+                has_depiction=$(grep -A 10 "^Package: $pkg_id$" Packages.tmp | grep -c "^Depiction:" || true)
+                has_sileo=$(grep -A 10 "^Package: $pkg_id$" Packages.tmp | grep -c "^SileoDepiction:" || true)
+                
+                if [[ $has_depiction -eq 0 && -d "depictions/web/$pkg_id" ]]; then
+                    echo "Depiction: $REPO_URL/depictions/web/?p=$pkg_id"
+                fi
+                if [[ $has_sileo -eq 0 && -f "depictions/native/$pkg_id/depiction.json" ]]; then
+                    echo "SileoDepiction: $REPO_URL/depictions/native/$pkg_id/depiction.json"
+                fi
             fi
-            if [[ $has_sileo -eq 0 && -f "depictions/native/$pkg_id/depiction.json" ]]; then
-                echo "SileoDepiction: $REPO_URL/depictions/native/$pkg_id/depiction.json" >> Packages.tmp
-            fi
-        fi
-        echo "$line" >> Packages
-    done < Packages.tmp
+        done < Packages.tmp
+    } > Packages
     rm Packages.tmp
 
     gzip -c9 Packages > Packages.gz
