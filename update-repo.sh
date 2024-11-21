@@ -8,6 +8,8 @@ CONFIG_DIR="$REPO_DIR/assets/repo"
 CONFIG_FILE="$CONFIG_DIR/repo.conf"
 REPO_URL="https://repo.adriancastro.dev"
 
+mkdir -p "$REPO_DIR/debs"
+
 APT_FTPARCHIVE="apt-ftparchive"
 
 key_id=""
@@ -26,7 +28,7 @@ process_packages() {
     done
 }
 
-cd "$SCRIPT_DIR"
+cd "$REPO_DIR"
 
 if [[ "$OSTYPE" == "linux"* ]]; then
     # Linux setup
@@ -54,7 +56,7 @@ fi
 rm -f Packages Packages.{xz,gz,bz2,zst} Release{,.gpg} InRelease
 
 # Generate Packages file
-$APT_FTPARCHIVE packages ./debs| process_packages > Packages
+$APT_FTPARCHIVE packages ./debs | process_packages > Packages
 
 # Compress Packages file
 gzip -c9 Packages > Packages.gz
@@ -64,6 +66,8 @@ bzip2 -c9 Packages > Packages.bz2
 
 # Generate Contents file
 $APT_FTPARCHIVE contents ./debs > Contents-iphoneos-arm
+
+# Compress Contents file
 bzip2 -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.bz2
 xz -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.xz
 xz -5fkev --format=lzma Contents-iphoneos-arm > Contents-iphoneos-arm.lzma
