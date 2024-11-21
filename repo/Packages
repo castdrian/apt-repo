@@ -15,3 +15,22 @@ Description: Remove videos uploaded by specific channels
 Name: Gonerino
 Author: Adrian Castro
 
+Package: dev.adrian.gonerino
+Architecture: iphoneos-arm
+Version: 0.3.6
+Section: Tweaks
+Maintainer: Adrian Castro
+Installed-Size: 92
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debs/dev.adrian.gonerino_0.3.6_iphoneos-arm.deb
+Size: 12954
+MD5sum: b35c28478f1afbfd7800023497f18a3f
+SHA1: 81ae87b2b26f904b5b7f3d59961582174d843c1c
+SHA256: bff7a475cebf7d80c4c2fd17801b398dc4807879087418fa1cbd998502474e8c
+SHA512: cdaa81d0d6923b9865b6018203e8f621415c76c1d5f60825c1cdebefb1ad4f1f09b67b7bed2bb91733ef881f8b87997ff2fa74c43c07260a2501bbcbea1e7664
+Description: Remove videos uploaded by specific channels
+Name: Gonerino
+Author: Adrian Castro
+Depiction: https://repo.adriancastro.dev/depictions/web/?p=dev.adrian.gonerino
+SileoDepiction: https://repo.adriancastro.dev/depictions/native/dev.adrian.gonerino/depiction.json
+
