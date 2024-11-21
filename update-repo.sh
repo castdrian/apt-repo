@@ -54,10 +54,7 @@ fi
 rm -f Packages Packages.{xz,gz,bz2,zst} Release{,.gpg} InRelease
 
 # Generate Packages file
-{
-    $APT_FTPARCHIVE packages ./debians/root | process_packages
-    $APT_FTPARCHIVE packages ./debians/rootless | process_packages
-} > Packages
+$APT_FTPARCHIVE packages ./debs| process_packages > Packages
 
 # Compress Packages file
 gzip -c9 Packages > Packages.gz
