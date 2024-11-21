@@ -31,19 +31,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup environment
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y apt-utils xz-utils zstd bzip2 lz4 gzip
-          mkdir -p debs
-
       - name: Download package
-        if: github.event_name == 'workflow_call'
+        if: inputs.package_url != ''
         run: |
           curl -L "${{ inputs.package_url }}" -o "debs/${{ inputs.package_name }}"
 
       - name: Update package version
-        if: github.event_name == 'workflow_call'
+        if: inputs.package_url != ''
         run: |
           dpkg-deb -f "debs/${{ inputs.package_name }}" > control.tmp
 
@@ -91,9 +85,6 @@ jobs:
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
