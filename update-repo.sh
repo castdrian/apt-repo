@@ -8,6 +8,8 @@ CONFIG_DIR="$REPO_DIR/assets/repo"
 CONFIG_FILE="$CONFIG_DIR/repo.conf"
 REPO_URL="https://repo.adriancastro.dev"
 
+APT_FTPARCHIVE="apt-ftparchive"
+
 key_id=""
 if [[ -n "${GPG_KEY_ID:-}" ]]; then
     key_id="$GPG_KEY_ID"
@@ -47,8 +49,6 @@ elif [[ "$(uname)" == "Darwin" ]] && [[ "$(uname -p)" == "i386" ]]; then
         chmod 751 ./apt-ftparchive
     fi
     APT_FTPARCHIVE="./apt-ftparchive"
-else
-    APT_FTPARCHIVE="apt-ftparchive"
 fi
 
 rm -f Packages Packages.{xz,gz,bz2,zst} Release{,.gpg} InRelease
