@@ -8,6 +8,7 @@ CONFIG_DIR="$REPO_DIR/assets/repo"
 CONFIG_FILE="$CONFIG_DIR/repo.conf"
 REPO_URL="https://repo.adriancastro.dev"
 
+echo "Creating directories..."
 mkdir -p "$REPO_DIR/debs"
 
 APT_FTPARCHIVE="apt-ftparchive"
@@ -28,46 +29,32 @@ process_packages() {
     done
 }
 
-cd "$REPO_DIR"
+echo "Current directory: $(pwd)"
+echo "Changing to repo directory: $REPO_DIR"
+cd "$REPO_DIR" || exit 1
 
 if [[ "$OSTYPE" == "linux"* ]]; then
-    # Linux setup
-    if ! command -v apt-ftparchive &> /dev/null; then
-        sudo apt-get update
-        sudo apt-get install -y apt-utils
-    fi
-
-elif [[ "$(uname)" == "Darwin" ]] && [[ "$(uname -p)" == "i386" ]]; then
-    # macOS setup
-    if ! command -v brew &> /dev/null; then
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-    fi
-    brew list --verbose wget || brew install wget
-    brew list --verbose xz || brew install xz
-    brew list --verbose zstd || brew install zstd
-    
-    if [ ! -f "./apt-ftparchive" ]; then
-        wget -q -nc https://apt.procurs.us/apt-ftparchive
-        chmod 751 ./apt-ftparchive
-    fi
-    APT_FTPARCHIVE="./apt-ftparchive"
+    echo "Installing dependencies..."
+    sudo apt-get update
+    sudo apt-get install -y apt-utils xz-utils zstd bzip2 lz4 gzip apt-utils
 fi
 
+echo "Cleaning old files..."
 rm -f Packages Packages.{xz,gz,bz2,zst} Release{,.gpg} InRelease
 
-# Generate Packages file
-$APT_FTPARCHIVE packages ./debs | process_packages > Packages
+echo "Generating Packages file..."
+$APT_FTPARCHIVE packages ./debs | process_packages > Packages || exit 1
 
-# Compress Packages file
+echo "Compressing files..."
 gzip -c9 Packages > Packages.gz
 xz -c9 Packages > Packages.xz
 zstd -c19 Packages > Packages.zst
 bzip2 -c9 Packages > Packages.bz2
 
-# Generate Contents file
+echo "Generating Contents file..."
 $APT_FTPARCHIVE contents ./debs > Contents-iphoneos-arm
 
-# Compress Contents file
+echo "Compressing Contents file..."
 bzip2 -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.bz2
 xz -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.xz
 xz -5fkev --format=lzma Contents-iphoneos-arm > Contents-iphoneos-arm.lzma
@@ -75,11 +62,11 @@ lz4 -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.lz4
 gzip -c9 Contents-iphoneos-arm > Contents-iphoneos-arm.gz
 zstd -c19 Contents-iphoneos-arm > Contents-iphoneos-arm.zst
 
-# Generate Release file
+echo "Generating Release file..."
 $APT_FTPARCHIVE release -c "$CONFIG_FILE" . > Release
 
-# Sign Release file if key is available
 if [[ -n "$key_id" ]]; then
+    echo "Signing Release file..."
     gpg -abs -u "$key_id" -o Release.gpg Release
     gpg -abs -u "$key_id" --clearsign -o InRelease Release
 fi
