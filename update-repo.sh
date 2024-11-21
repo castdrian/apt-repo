@@ -6,6 +6,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_DIR="$SCRIPT_DIR/repo"
 CONFIG_DIR="$REPO_DIR/assets/repo"
 CONFIG_FILE="$CONFIG_DIR/repo.conf"
+REPO_URL="https://repo.adriancastro.dev"
 
 key_id=""
 
@@ -18,7 +19,25 @@ update_repo() {
     cd "$REPO_DIR" || exit
     rm -f Packages* Contents-iphoneos-arm* Release* 2> /dev/null
 
-    /usr/bin/apt-ftparchive packages ./debs > Packages
+    /usr/bin/apt-ftparchive packages ./debs > Packages.tmp
+
+    while IFS= read -r line; do
+        if [[ $line =~ ^Package:\ (.*)$ ]]; then
+            pkg_id="${BASH_REMATCH[1]}"
+            
+            has_depiction=$(grep -A 10 "^Package: $pkg_id$" Packages.tmp | grep -c "^Depiction:" || true)
+            has_sileo=$(grep -A 10 "^Package: $pkg_id$" Packages.tmp | grep -c "^SileoDepiction:" || true)
+            
+            if [[ $has_depiction -eq 0 && -d "depictions/web/$pkg_id" ]]; then
+                echo "Depiction: $REPO_URL/depictions/web/?p=$pkg_id" >> Packages.tmp
+            fi
+            if [[ $has_sileo -eq 0 && -f "depictions/native/$pkg_id/depiction.json" ]]; then
+                echo "SileoDepiction: $REPO_URL/depictions/native/$pkg_id/depiction.json" >> Packages.tmp
+            fi
+        fi
+        echo "$line" >> Packages
+    done < Packages.tmp
+    rm Packages.tmp
 
     gzip -c9 Packages > Packages.gz
     xz -c9 Packages > Packages.xz
