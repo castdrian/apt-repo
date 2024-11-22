@@ -1,6 +1,11 @@
-.							    dev.adrian.gonerino
-DynamicLibraries					    dev.adrian.gonerino
+.							    app.pyoncord,dev.adrian.gonerino
+Application Support					    app.pyoncord
+Bunny.dylib						    app.pyoncord
+Bunny.plist						    app.pyoncord
+BunnyResources.bundle					    app.pyoncord
+DynamicLibraries					    app.pyoncord,dev.adrian.gonerino
 Gonerino.dylib						    dev.adrian.gonerino
 Gonerino.plist						    dev.adrian.gonerino
-Library							    dev.adrian.gonerino
-MobileSubstrate						    dev.adrian.gonerino
+Library							    app.pyoncord,dev.adrian.gonerino
+MobileSubstrate						    app.pyoncord,dev.adrian.gonerino
+payload-base.js						    app.pyoncord
