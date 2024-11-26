@@ -7,11 +7,11 @@ Installed-Size: 152
 Depends: mobilesubstrate (>= 0.9.5000)
 Conflicts: app.enmity, mod.vendetta
 Filename: ./debs/app.pyoncord_0.6.0_iphoneos-arm.deb
-Size: 27106
-MD5sum: 4fe6acdca4ab40c8a520a97699f38ef0
-SHA1: d824e9eb47032889f16cd0966269f9bc1d5db99e
-SHA256: a167b7e8bb5e0e75036c0322ce9b5271d9bd102a6369f94f27d567a1281adda7
-SHA512: efbfa5dc6b159e1d03fe66f66f54b20266995aff906eb9c63beb52596d0791fcfef7276a5257273766458789b28b48a2177eb1d1da46e9a287cb6cccb5e0b3f6
+Size: 27118
+MD5sum: 61ba3914d73c603d39071274f5ed002e
+SHA1: a8bcdbc731dcef00772932b618efffe0923c805a
+SHA256: 0e639782efc79ebf42a2523fc20c40be4702e5bfe6d62fbaf3a3c2bec8be447a
+SHA512: ee3d797b9f9f8ee55bb646debaa66af13070a810eb0ac7c0262990bb46b3910966cb6d35933e22ce51cc00d1cc87030d70668d84d01c3fb314bed0aebeecb9c2
 Description: A client modification for Discord's mobile app.
 Name: Bunny
 Author: Adrian Castro, Pylix, FieryFlames
