@@ -27,20 +27,6 @@
                     "class": "DepictionMarkdownView"
                 },
                 {
-                    "title": "Compatibility",
-                    "class": "DepictionHeaderView"
-                },
-                {
-                    "markdown": "* iOS: 15.8.3+\n* YouTube: 19.42.1+\n* Injection Methods:\n  * ElleKit (Dopamine)\n  * TrollFools (TrollStore)\n  * Sideloaded IPA (MobileSubstrate)",
-                    "useSpacing": true,
-                    "class": "DepictionMarkdownView"
-                },
-                {
-                    "title": "Dependencies",
-                    "text": "YouGroupSettings",
-                    "class": "DepictionTableTextView"
-                },
-                {
                     "spacing": 16,
                     "class": "DepictionSpacerView"
                 },
