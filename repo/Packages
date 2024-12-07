@@ -1,0 +1,38 @@
+Package: app.pyoncord
+Architecture: iphoneos-arm64
+Version: 0.7.0
+Section: Tweaks
+Maintainer: Adrian Castro, Pylix
+Installed-Size: 152
+Depends: mobilesubstrate (>= 0.9.5000)
+Conflicts: app.enmity, mod.vendetta
+Filename: ./debs/app.pyoncord_0.7.0_iphoneos-arm64.deb
+Size: 27000
+MD5sum: 2962e2281b2f7b66557574bb389d9f8b
+SHA1: ac12e8e102c3c637afaf080aa003d865ad714503
+SHA256: 5481a821878d71d821a71ecca4b1197275fce59d7f9c8258675c2c053f9ac121
+SHA512: 81ae3b7b37724b98c31c4a673269c7661246d5382c46c0032cc2b676b52636c171813971c19368c20479b0d96e75d9f89cc92e74040ed721f5114946222cb047
+Description: A client modification for Discord's mobile app.
+Name: Bunny
+Author: Adrian Castro, Pylix, FieryFlames
+Icon: https://avatars.githubusercontent.com/u/132727175
+
+Package: dev.adrian.gonerino
+Architecture: iphoneos-arm64
+Version: 0.4.3
+Section: Tweaks
+Maintainer: Adrian Castro
+Installed-Size: 92
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debs/dev.adrian.gonerino_0.4.3_iphoneos-arm64.deb
+Size: 13820
+MD5sum: e1302d9fefc6335dffa139789574e7b6
+SHA1: 0e8d8269741af48cd6aeaea4b726435e760ae00a
+SHA256: f40014fcc265b19ca72adfc4cdfde7dec3cc9a834af404f80443148bfd4acfe0
+SHA512: 58fe6400aed9363fac93c5046758e845e34f2b79a511892fd855efe496a519929c3d463f730ecee8f41f179148d2d430d22495afc4e9c4762e546d878b0eb585
+Description: Remove videos uploaded by specific channels
+Name: Gonerino
+Author: Adrian Castro
+Depiction: https://repo.adriancastro.dev/depictions/web/?p=dev.adrian.gonerino
+SileoDepiction: https://repo.adriancastro.dev/depictions/native/dev.adrian.gonerino/depiction.json
+
