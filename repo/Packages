@@ -36,6 +36,25 @@ Name: Bunny
 Author: Adrian Castro, Pylix, FieryFlames
 Icon: https://avatars.githubusercontent.com/u/132727175
 
+Package: app.pyoncord
+Architecture: iphoneos-arm64
+Version: 0.8.1
+Section: Tweaks
+Maintainer: Adrian Castro, Pylix
+Installed-Size: 152
+Depends: mobilesubstrate (>= 0.9.5000)
+Conflicts: app.enmity, mod.vendetta, app.unbound
+Filename: ./debs/app.pyoncord_0.8.1_iphoneos-arm64.deb
+Size: 28708
+MD5sum: ab975fb648404f9662892e4b90c63787
+SHA1: 30fe69109ca356f63e78305eac52b1e593ee61f2
+SHA256: 6510bcb8033ff12111e5de91b92e2033b9aff5a4740516c099e7fa77bb290d54
+SHA512: b5778c9136157f05c19e4c23b1e1133a238b0d2db27e1738246d893a41736e45d968b93bcf5e2d6d9296171739b30427c947262994337e414264fb6f18b633d2
+Description: A client modification for Discord's mobile app.
+Name: Bunny
+Author: Adrian Castro, Pylix, FieryFlames
+Icon: https://avatars.githubusercontent.com/u/132727175
+
 Package: dev.adrian.gonerino
 Architecture: iphoneos-arm64
 Version: 0.4.3
