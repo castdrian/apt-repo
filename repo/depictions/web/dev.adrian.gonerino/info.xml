@@ -1,7 +1,7 @@
 <package>
 	<id>dev.adrian.gonerino</id>
 	<name>Gonerino</name>
-	<version>1.2.2</version>
+	<version>1.3.0</version>
 	<compatibility>
 		<firmware>
 			<miniOS>15.8.3</miniOS>
