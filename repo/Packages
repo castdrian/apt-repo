@@ -55,6 +55,24 @@ Name: Bunny
 Author: Adrian Castro, Pylix, FieryFlames
 Icon: https://avatars.githubusercontent.com/u/132727175
 
+Package: dev.adrian.chronos
+Architecture: iphoneos-arm64
+Version: 1.0.0
+Section: Tweaks
+Maintainer: Adrian Castro
+Installed-Size: 404
+Depends: ellekit
+Filename: ./debs/dev.adrian.chronos_1.0.0_iphoneos-arm64.deb
+Size: 68846
+MD5sum: e8f941e1a0fe3cbaa677cbdde1f065e9
+SHA1: 74cf2ac39d149d97450326aaf46234fe4035e657
+SHA256: 7c3cc87a1a40784f8d29c880c93006a21441589dad932fa3ff56bc23bfdbe024
+SHA512: 93953ddf5c9048ef8c89813a34d120d7133541fddfec7027418873fb42dba0c5316059a700202b8329884c672f8ad1229edac17cbdf94350096e4a258e20866e
+Description: Sync Audible progress to Hardcover.
+Name: Chronos
+Author: Adrian Castro
+Icon: https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/38/df/fa/38dffa0e-9180-af3b-0236-d62a65360c53/AppIcon-0-0-1x_U007emarketing-0-0-0-8-0-0-85-220.png/1024x1024.jpg
+
 Package: dev.adrian.gonerino
 Architecture: iphoneos-arm64
 Version: 0.4.3
