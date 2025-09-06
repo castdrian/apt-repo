@@ -4,7 +4,7 @@ Hash: SHA512
 Architectures: iphoneos-arm iphoneos-arm64
 Codename: ios
 Components: main
-Date: Fri, 05 Sep 2025 23:47:22 +0000
+Date: Sat, 06 Sep 2025 17:11:09 +0000
 Description: Adrian's Repository
 Label: Adrian's Repo
 Origin: Adrian's Repo
@@ -13,72 +13,72 @@ Version: 1.0
 MD5Sum:
  bb1bfb494fff3f0207132e7913d0445c              781 Contents-iphoneos-arm
  6b4242f7d485c4f8f6c1588812933294              259 Contents-iphoneos-arm.bz2
- 6a86242b64d650d619b9cb204351e87d              225 Contents-iphoneos-arm.gz
+ 5dca59dcf232efd27c554584b1ee396f              225 Contents-iphoneos-arm.gz
  f0c3b14b461793798723393635dade16              268 Contents-iphoneos-arm.lz4
  961b9d3f94069b0fab03f12ac742739e              212 Contents-iphoneos-arm.lzma
  6a01f73cebe1db359f050b7a462803f0              256 Contents-iphoneos-arm.xz
  4fcb837a68fe27bbc10fb47925d162fa              198 Contents-iphoneos-arm.zst
- 6cc932251f24318940c061dd0589ade8            16078 Packages
- 638210a86eaec95a9dc14a0bed304556             4378 Packages.bz2
- a68535cefd6ee9b3a4090c8967f93c0e             4440 Packages.gz
- 6542160a477924af0f82262c365a2099             3960 Packages.xz
- 6f9d4b8438ed25b46cb7c538fc9bf83e             3903 Packages.zst
- 093cc6d138914b84b499e4444f79ecf7              215 Release
+ eb9c6db8e377c488897e7335d5ee7344            16858 Packages
+ 3dcf3796bdd2c4ee57ec629208515be9             4531 Packages.bz2
+ dccd7d9d68e2a9f361de5a999871941d             4625 Packages.gz
+ 06c8fe3f13a8207c175942aaa9764797             4116 Packages.xz
+ e3daf8a38e9944212df85bb2d50fe2b8             4060 Packages.zst
+ dcc7421ecb1c29781a60601499feb17f              215 Release
 SHA1:
  9ddefaade496138076da5bde52b4479a5dd6753d              781 Contents-iphoneos-arm
  73b1a3f565965fb14209fe49d3acd4dbf4d5f0f9              259 Contents-iphoneos-arm.bz2
- 7edfa544d5d8eee3992c74dfe655564e8a784742              225 Contents-iphoneos-arm.gz
+ 207536ad62d64d8cb17d8543d177e684bc229ac3              225 Contents-iphoneos-arm.gz
  d44e3f73af41dafd45d1c4edd79c955c0b2778d1              268 Contents-iphoneos-arm.lz4
  448a3ccb48c4b23b4ba35a7c31b33a5971fc5eeb              212 Contents-iphoneos-arm.lzma
  d597cfa65fa993bffe48cf6ca638fbebf2e88784              256 Contents-iphoneos-arm.xz
  9fbefd9800ee14b3a601561d9f689b62f2ef7f58              198 Contents-iphoneos-arm.zst
- b23d42b5043a0a8d774d747e1c27c443bd4881dd            16078 Packages
- af53f666c5128e0a60974e0370341209df88d963             4378 Packages.bz2
- 68803411538d26d5467429b81fa7922a5071cf36             4440 Packages.gz
- 2cdf032dd5b7e1a1a5e65750e60aaff3957f1eb8             3960 Packages.xz
- 2aaf7a22c1bcd727f806b8d406f6f2d1b10e25bf             3903 Packages.zst
- 9d50bf7164eb357b36ff2375179f3254e57ce346              215 Release
+ 717372ab0092f696615d8c078693245bec768b2c            16858 Packages
+ 135e0663a5df1c6a87c347fe77fc07d68d1af99d             4531 Packages.bz2
+ 7e432a3ef0c8de34b32a1c108b85e219e2d02812             4625 Packages.gz
+ 5f5f293dcbb02a3e305a6e8e5d8a469ee05c3a0f             4116 Packages.xz
+ 363458134a3ee055661d880d491d1851dadb9f9a             4060 Packages.zst
+ 68c18895eb2f5f9d07380c1d9755001a7f15eea5              215 Release
 SHA256:
  4d01228028367e499b577f00e0fe657a0994a2cb6d39dd85d25ba86fa00ca2f5              781 Contents-iphoneos-arm
  ce123010ba6b3295f186f81283d0e128ccff417f8772b951f3bb89cfa654e7f5              259 Contents-iphoneos-arm.bz2
- 8257b09b54e52b44cb58965f0b14007ac2babf8ed06c1c0220ac6d72168d8553              225 Contents-iphoneos-arm.gz
+ 34ae2475a61d59eea51343459499fd0384d616613936afc5a255999202278aeb              225 Contents-iphoneos-arm.gz
  21f1dfa1b87aaa8a3bb6b280da7d340988c071c5969ca40f8aea06d5bf9b5139              268 Contents-iphoneos-arm.lz4
  e4007074a72fb6604ba63d69de45929895da85dc8c52512a7e755e1702d95807              212 Contents-iphoneos-arm.lzma
  3ee0f504251f2618134c8f2595d72e1a80362c33b499dbff8d0e55aa5e8d6e66              256 Contents-iphoneos-arm.xz
  b9c536fa604e398513c5c85b34d00f7615a6c4be7d71afb9cd95960a1dd7ebda              198 Contents-iphoneos-arm.zst
- dd2f64c5886bc7924d2e5c7a5dde2869726afee80123cfb950ba0018d3b4089a            16078 Packages
- 68287ab2aa9f2d739bbdbd9ab2acc9043fed92f395aaf451b98db520c166c542             4378 Packages.bz2
- 6ad2fed5b5ea817a529c86a123cd3ad78cdb47048cdf6edbb245724480fe5327             4440 Packages.gz
- cefc4cd1c75c68a09e11e4571801b27ad91f33fb2d416358cb5b1b614804bcaf             3960 Packages.xz
- 02cb7b8b623a4d0717f8ebf2c7cc3952ccf06ccdec69f16af145fcb947977d00             3903 Packages.zst
- 0f45e45c488229434a53114df00ef500fdc9b77ccc8ffa53ffa2333953bde4df              215 Release
+ 045bee05e80d64c951811d116be263b925a0b9f35a861a118bbc9cb386ef5f4d            16858 Packages
+ fd2233c423ea20a6068179cd783993d1434ca0c42a6ee8a07df5410c74521ecb             4531 Packages.bz2
+ fa148b34b0bf50bdd1aba9774525dc5ae8c2cb8f2ab79950813ec171314ae14e             4625 Packages.gz
+ 5d262364ea363e0d9b06154cca7507fbb9077326cd215021d219f42df251ecaa             4116 Packages.xz
+ 6bf0791f486a27f34d73c440b7dd2a03d1123bb81c6201b77edae9de8786dc0d             4060 Packages.zst
+ 10f31432799779ed077c04c6bc8e8ad8c2da20dca7f876742cf56da2131bec3b              215 Release
 SHA512:
  869152c022f86010faf39c6dbb579c1d583f89cfd85cbc5f172ecbe72087d2ea3efb61be193ebf66e3bd1e700f65d69f4cbe7742d1455c1f81cfe0ff870ad1d9              781 Contents-iphoneos-arm
  df8e0f39c9a0cbc6ddbfc833f9f304525c5e3a929ecc019b23822366f166afaaf2c30f2e2dea314b216e0148dc9ce941dcbf09ec001d3ac887ca412105976737              259 Contents-iphoneos-arm.bz2
- f79df8ee1424661d2ebecc306b863d3d57d415ae94c605dfe363f42f01d3004aac33ac01a3fe3d7673c0204f47ddc6239079a6cec57108d497517855608a2cb4              225 Contents-iphoneos-arm.gz
+ ae0fb92cf30c6575232ccdd07bacb665261f0ab0145d66fd8fd7f6bf3b752fde6c2f63b6f7af8b87101c6f8cad72d80ef9833f58fc8967d0bf1fe6e9f2db4535              225 Contents-iphoneos-arm.gz
  4ca2e5c5b56be1854d134872c18227955db76494706388ada60ecca69fcf182c619253f98b48c099198e5572e4ee5514d08eb650a7ef23edb065e99247ef06b4              268 Contents-iphoneos-arm.lz4
  55f6dda21898e1b0fc0343d067cf0e335e46c079f2ea7178a9835282a9f92a4fd09e4846276487d80ec7a869314526bd8200e6faff7941c378e35544b7ddea35              212 Contents-iphoneos-arm.lzma
  8f31c61b5f4b411492add5a63f9e28cf8bf49f71683aa8c10f111b38d1c46275cedb8707e833215176e0046008a454d3aa800f847150eb467b50bb0a3e577248              256 Contents-iphoneos-arm.xz
  6af4119a1f7b54a77c11a1aaa63ca054ec21f0711c31d8977f8b5489b7f591b067c4d41cf0957a5b6b5a8ecfb2bdb8acd2a58ad3622bf8fb91a2425ebeab850a              198 Contents-iphoneos-arm.zst
- a0f7e23f4fd2cf372e03c552415ae53f5a55a6cf6bfe25cd8185d4f107f86bfcbaa3588575c2ad722c49d06083260eafb4aa202e4098302829b9afbac3fcc7c2            16078 Packages
- fc28bcc68db15aa73160f40456416759fee3bb2e225b1b282518a343d4f4f9fd30e017e70fa4335a3633d4d3e3027d33372fe5a234014db078bd82b0d86447a2             4378 Packages.bz2
- d1e90a25bc214c0820c91ccfe105c5738ed9e6c66ae463ecd1f0b5b4a18ed40c8020be30e752623fea5c4ea8e5d8b0138889ef5062eaf6b42c17f46114f6a242             4440 Packages.gz
- aefe5e17670586fc60327a2d0ecfe8acf20db656503e690539eb93964ee624a3fe626c74f4d0c1cba9820b834de324691733535dccdff2b2bd9badb72f231c93             3960 Packages.xz
- 1324758a5defeb695ddec9596e6be0b9ee485c3fc236691559104cb84cfd589105b27ba2e809c2135111e1f442c2d55a4c61f27f53d79c35fff2445897fccd5f             3903 Packages.zst
- 936e1dffce46c76536a390328d4682e5b0998674eb3cd7a30a9f9ad887cd270f2d3c562a4580a9b89ccbdb36a3161b4fd79414b7528fed1770231f4beff50c16              215 Release
+ 52c9868779273add2c59c053875c09bb4b14bdfe1c2639bb72138382b5dfaa85b86ed0d85807b8021625fad953525a0a457f1353b8dd546e02a775bff6424158            16858 Packages
+ 72696b592f2d949ccf39b18004eae7aee2978e7a182a1e28404ddc9ab81223b8c9e256d0552838b0b64f89f91c76fe57ea9d439385a602f9becc8d795c4e9493             4531 Packages.bz2
+ 2a2304a7b1a84e3a7b723a43bc751adc9e7ab0bf6d547a24ab1f31c776e31ec3a3b6b56cd9916c01e0208112a52fefad34b5ecf93deb35b6099ac9e6520e2912             4625 Packages.gz
+ ab26a38f7c2f2eee826bd109014a4d85db91ed754db712d2a4169ae99c13a3163083e32039841dfd610d6aee3c9a547e451aa39695f35b80fd937fe5510a478c             4116 Packages.xz
+ 14c6bbf4bb230fc0308bf203d906ffc557e05b5994c4b1f1129a00e2a3df0ee078159812fb32fcaad6ce54951c2a334037076d02964e6c12e14a39ba4a368843             4060 Packages.zst
+ 0bbf6a7bc61643fbff404c6537a7e1243054bf3e021153dc4e742f103e7deb628f3073bbb40a909cf9dd47884e4fd8021f6740eab9cf7de05c3ad2fa1968e299              215 Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEK3Hahjf1F/S0Xd0c3/1jGguX9X0FAmi7dooACgkQ3/1jGguX
-9X3T8BAAjqTOpIAsvoP7apWj0sgJo9DdGberieU20+5VvHSf146C/pVb5ERHfOTY
-Qg5i+53RnAJs73vQddfj68Pndw6Lkd5onzPe5Pkn65r+fWUAIoPtYpmDWiYHkOGQ
-HStdvzd4owtO3IDGA4+UyRXPUjsDcKcpfJjnu7JiiwsH1xCVweGswukD9AQrFJo8
-ddstLBpOV6IOD6JoohR6jyucm/b6ZucSVIb7h17exBatOJ3uVtRE6MRGjnC9rFaW
-vEcyxk3XYDdEgYfu8xoOSFmV+yRanjYvQo1MUU602yoUNW+lfzTnYWQY4IH6574a
-YmfiU+XrnN/CdZUasDYVD5VYMgM7Kx88KgWNohiwmBCbqXhKN3A7SpyRZY7wlufV
-8l0+sfezk0W23biwhLSeHNa8UCIv0mdRLrIDux5iJsw7wBv+y/USEgt8Da/6+RS8
-RuERJ0UOHkrgeKJWborRaWRyrI0z8+0qxmhqIRkwpota48DqUYeb0VrulNNQRVaT
-nZsF6kSPoOV44yufg80Be0ydCdNd5pwSy7wzFYB7KA1xVJal/O/4CzQCgqSgKslq
-H9epHkPvQpaZKwIegV6wm35R0e9BGu6Vrw7OQL1XZi5SALxyJNd0KtyDbXUDy6jw
-OdpjVcuLOtRbvRGVoAFa3agjwIMNMH3uOMoRxrU/C047VgNbmpo=
-=ha53
+iQIzBAEBCgAdFiEEK3Hahjf1F/S0Xd0c3/1jGguX9X0FAmi8ay0ACgkQ3/1jGguX
+9X0w1RAAoEyUJlwgYK+MC04t3JM83w/q9452EhFHioxPherKVDV6Bbrn6WLnKxTO
+70vGqyy4wctg+reRjP9lifcA093KGBJd8U+7Pv+1xJuHBhE6OfohlzLGB5OHVLwt
+35bYwpWjocBQ5KClt65XNEVIMK3Gg4NNuxwIiiUfLkoGJt/VufnT365D6M3zo3I1
+DGMQJFbsb6MUYfj1rAfRtCg1xii4CQSApvhqZsMO92/5SDBLBtAWrWWF0jrU+g29
+W0mQovPkcwqeP+ExNSDsv05sAB8tsnu9XXpgUvBqARf/yj3IMHAadFG+HcPEkKvM
+BgDe9D0ZX2iMsP1tPr35iQBCGm4dQNGvj00co8CzPtT8noK7Mtpv+ySAoART86Rk
+Snb8pZxYklosdd36lZn8uUs8+5nub3remnRQVRm3QFtRtXABaUIakydmikbZ5YDq
+eD2IkdxxnI1pg06/KkTkZtIa822e3JTtHATHOgRlgNlMhCnGbhUVwPTmQCNN0a8t
+yzJjaVFBrJFTj8XEzoM8AgOJcv7ju0Cy9Z6qHm94G6KddzUtJCWZE81GBgndE+np
+HAiEQGvH+HYgNHqN6XsGQYdRvqWfSaZEcWuMWZ2i9iM2BAoG+MZaMyEmsth+j7yE
+hPUjXeUcs/iEzOHKbc1bnA6PzTXdBe1DFwaGIE0KwyRJcL6Z+yM=
+=/exj
 -----END PGP SIGNATURE-----
