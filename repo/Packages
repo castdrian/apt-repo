@@ -217,6 +217,24 @@ Name: Chronos
 Author: Adrian Castro
 Icon: https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/38/df/fa/38dffa0e-9180-af3b-0236-d62a65360c53/AppIcon-0-0-1x_U007emarketing-0-0-0-8-0-0-85-220.png/1024x1024.jpg
 
+Package: dev.adrian.chronos
+Architecture: iphoneos-arm64
+Version: 1.5.1
+Section: Tweaks
+Maintainer: Adrian Castro
+Installed-Size: 516
+Depends: ellekit
+Filename: ./debs/dev.adrian.chronos_1.5.1_iphoneos-arm64.deb
+Size: 91900
+MD5sum: 6325d66b5b5e7d194bc67415c3490cf1
+SHA1: f4a8e5ab4eda3855008558bc95338f2b53ae61b4
+SHA256: b799b18f40fce6deea087683537071c726572b7246ea2aaec57d8130e4dbf868
+SHA512: 68a69c2a5d6664f806c5b128e16c2a42645f4bd8d0e2b4654edf6fbcfc99d3c167ddbab1df41fd6bd539cd5492059ae10587f33a8676497e4a3ad96ac657477c
+Description: Sync Audible progress to Hardcover
+Name: Chronos
+Author: Adrian Castro
+Icon: https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/38/df/fa/38dffa0e-9180-af3b-0236-d62a65360c53/AppIcon-0-0-1x_U007emarketing-0-0-0-8-0-0-85-220.png/1024x1024.jpg
+
 Package: dev.adrian.gonerino
 Architecture: iphoneos-arm64
 Version: 0.4.3
