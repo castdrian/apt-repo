@@ -520,3 +520,20 @@ Author: Adrian Castro
 Depiction: https://repo.adriancastro.dev/depictions/web/?p=dev.adrian.gonerino
 SileoDepiction: https://repo.adriancastro.dev/depictions/native/dev.adrian.gonerino/depiction.json
 
+Package: dev.adrian.ysrudffs
+Architecture: iphoneos-arm64
+Version: 1.0.0
+Section: Tweaks
+Maintainer: Adrian Castro
+Installed-Size: 168
+Depends: ellekit
+Filename: ./debs/dev.adrian.ysrudffs_1.0.0_iphoneos-arm64.deb
+Size: 5536
+MD5sum: e172d68cb5f62576aaf10020cc7b9902
+SHA1: 62aabe5cb77e1c6c2b3fc1350300e45b979e5b6b
+SHA256: 0e0c4fd6d4438e371700efaf8ed4a9b442c6539d328e636449a2eb91c7415baf
+SHA512: b1d0a1b2b2a3d3a5b471d1dd4a19cc50b1a84ba02ac92875cf9cb18e06d58d049a7fd0f440f7eeb54aed2910ba8cb411a2b66f316a0ea08874eaad434e2746ff
+Description: Fix YouTube rotation
+Name: YouStopRotatingUpsideDownForFucksSake
+Author: Adrian Castro
+

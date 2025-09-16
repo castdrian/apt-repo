@@ -1,15 +1,17 @@
-.							    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino
+.							    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino,dev.adrian.ysrudffs
 Application Support					    app.pyoncord
 Bunny.dylib						    app.pyoncord
 Bunny.plist						    app.pyoncord
 BunnyResources.bundle					    app.pyoncord
 Chronos.dylib						    dev.adrian.chronos
 Chronos.plist						    dev.adrian.chronos
-DynamicLibraries					    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino
+DynamicLibraries					    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino,dev.adrian.ysrudffs
 Gonerino.dylib						    dev.adrian.gonerino
 Gonerino.plist						    dev.adrian.gonerino
-Library							    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino
-MobileSubstrate						    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino
-jb							    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino
+Library							    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino,dev.adrian.ysrudffs
+MobileSubstrate						    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino,dev.adrian.ysrudffs
+YouStopRotatingUpsideDownForFucksSake.dylib		    dev.adrian.ysrudffs
+YouStopRotatingUpsideDownForFucksSake.plist		    dev.adrian.ysrudffs
+jb							    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino,dev.adrian.ysrudffs
 payload-base.js						    app.pyoncord
-var							    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino
+var							    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino,dev.adrian.ysrudffs
