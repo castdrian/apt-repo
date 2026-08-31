@@ -538,6 +538,25 @@ Author: Adrian Castro
 Depiction: https://repo.adriancastro.dev/depictions/web/?p=dev.adrian.gonerino
 SileoDepiction: https://repo.adriancastro.dev/depictions/native/dev.adrian.gonerino/depiction.json
 
+Package: dev.adrian.jb-p1lot
+Architecture: iphoneos-arm64
+Version: 0.1.2
+Priority: optional
+Section: Development
+Maintainer: adrian
+Installed-Size: 1964
+Depends: ellekit
+Filename: ./debs/dev.adrian.jb-p1lot_0.1.2_iphoneos-arm64.deb
+Size: 1398422
+MD5sum: ec20324b481e2254cf41e95933685024
+SHA1: 49ebb4d3d1ec7a3181fab8faa118f6cd6a7400a1
+SHA256: 08ad6a1486fbd5e995bbefa2432cefea9177a87150df89d329312cd748b5ce68
+SHA512: c1728d2f087a1925f38be8e99b280b73fbca2cbab991dcdaf1197f4c8627c956dd51daa56c4cfb61fd2a5cf24f86ab91e3da902417dea8e7ea55487563504650
+Description: Rootless iOS MCP development bridge
+Name: jb-p1lot
+Author: adrian
+Icon: icon.png
+
 Package: dev.adrian.ysrudffs
 Architecture: iphoneos-arm64
 Version: 1.0.0
