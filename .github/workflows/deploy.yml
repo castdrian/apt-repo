@@ -11,7 +11,7 @@ on:
       package_name:
         required: true
         type: string
-      changelog_url:
+      changelog:
         required: false
         type: string
       release_url:
@@ -61,12 +61,15 @@ jobs:
 
           rm control.tmp
 
-      - name: Download changelog
-        if: inputs.changelog_url != '' && inputs.package_name != ''
+      - name: Write changelog
+        if: inputs.changelog != '' && inputs.package_name != ''
+        env:
+          CHANGELOG: ${{ inputs.changelog }}
+          PACKAGE_NAME: ${{ inputs.package_name }}
         run: |
-          PACKAGE_ID=$(dpkg-deb -f "repo/debs/${{ inputs.package_name }}" Package)
+          PACKAGE_ID=$(dpkg-deb -f "repo/debs/$PACKAGE_NAME" Package)
           mkdir -p "repo/changelogs/$PACKAGE_ID"
-          curl -L "${{ inputs.changelog_url }}" -o "repo/changelogs/$PACKAGE_ID/CHANGELOG.md"
+          printf '%s' "$CHANGELOG" > "repo/changelogs/$PACKAGE_ID/CHANGELOG.md"
 
       - name: Import GPG key
         env:

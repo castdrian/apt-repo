@@ -10,7 +10,7 @@ jobs:
     with:
       package_url: ${{ github.event.client_payload.package_url }}
       package_name: ${{ github.event.client_payload.package_name }}
-      changelog_url: ${{ github.event.client_payload.changelog_url }}
+      changelog: ${{ github.event.client_payload.changelog }}
       release_url: ${{ github.event.client_payload.release_url }}
       version: ${{ github.event.client_payload.version }}
     secrets: inherit
