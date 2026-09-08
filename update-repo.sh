@@ -7,6 +7,7 @@ REPO_DIR="$SCRIPT_DIR/repo"
 CONFIG_DIR="$REPO_DIR/assets/repo"
 CONFIG_FILE="$CONFIG_DIR/repo.conf"
 REPO_URL="https://repo.adriancastro.dev"
+PACKAGE_ICON_URL="$REPO_URL/assets/gonerino.svg"
 
 echo "Creating directories..."
 mkdir -p "$REPO_DIR/debs"
@@ -33,6 +34,8 @@ rm -f Packages Packages.{xz,gz,bz2,zst} Release{,.gpg} InRelease
 
 echo "Generating Packages file..."
 $APT_FTPARCHIVE packages ./debs > Packages
+awk -v icon="$PACKAGE_ICON_URL" 'BEGIN { RS=""; ORS="\n\n" } { if ($1 == "Package:" && $2 == "dev.adrian.gonerino" && $0 !~ /(^|\n)Icon:/) $0 = $0 "\nIcon: " icon; print }' Packages > Packages.with-icons
+mv Packages.with-icons Packages
 
 echo "Compressing files..."
 gzip -c9 Packages > Packages.gz

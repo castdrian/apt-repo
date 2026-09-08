@@ -10,13 +10,13 @@
 	<dependencies>
 		<package>YouGroupSettings</package>
 	</dependencies>
-	<shortDescription>Block YouTube channels and remove their videos from your feed</shortDescription>
+	<shortDescription>Block YouTube channels, videos, and keywords from your feeds</shortDescription>
 	<descriptionlist>
 		<description>A YouTube tweak that allows you to block specific channels and automatically remove their videos from your feed.</description>
-		<description>Features:</description>
-		<description>• Block channels directly from video context menu</description>
-		<description>• Automatically removes blocked channels' videos from your feed</description>
-		<description>• Block "People also watched this video" and "You might also like this" suggestions</description>
+		<description>• Block channels or individual videos from YouTube menus</description>
+		<description>• Filter feeds by channel, video, or keyword</description>
+		<description>• Remove blocked recommendations from Home, Search, related feeds, and Shorts</description>
+		<description>• Hide "People also watched" and "You might also like" sections</description>
 	</descriptionlist>
 	<changelog>
 		<change>Initial release</change>
@@ -28,4 +28,4 @@
 			<iconclass>fa-brands fa-github</iconclass>
 		</link>
 	</links>
-</package> 
+</package>

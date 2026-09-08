@@ -18,11 +18,20 @@
                     "class": "DepictionMarkdownView"
                 },
                 {
+                    "URL": "https://repo.adriancastro.dev/assets/gonerino.svg",
+                    "width": 64,
+                    "height": 64,
+                    "cornerRadius": 16,
+                    "alignment": 1,
+                    "xPadding": 4,
+                    "class": "DepictionImageView"
+                },
+                {
                     "title": "Features",
                     "class": "DepictionHeaderView"
                 },
                 {
-                    "markdown": "* Block channels directly from video context menu\n* Automatically removes blocked channels' videos from your feed\n* Block \"People also watched this video\" and \"You might also like this\" suggestions",
+                    "markdown": "* Block channels or individual videos from YouTube menus\n* Filter feeds by channel, video, or keyword\n* Remove blocked recommendations from Home, Search, related feeds, and Shorts\n* Hide \"People also watched\" and \"You might also like\" sections",
                     "useSpacing": true,
                     "class": "DepictionMarkdownView"
                 },
@@ -46,4 +55,4 @@
         }
     ],
     "class": "DepictionTabView"
-} 
+}
