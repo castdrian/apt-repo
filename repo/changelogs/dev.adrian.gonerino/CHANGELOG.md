@@ -2,9 +2,23 @@
 
 ## 1.6.0 - 2026-09-08
 
+### Features
+
+- add release notifications and changelog UI (467ed90)
+
+### Fixes
+
+- satisfy notification SDK callbacks (6a61482)
+
 ### Documentation
 
-- refresh changelog for 1.6.0 (d7f8722)
+- refresh changelog for 1.6.0 (87c389e)
+- generate changelog for 1.6.0 (465e5f0)
+
+### Maintenance
+
+- add LICENSE (77561e5)
+- update readme (2da2183)
 
 ## 1.5.0 - 2026-09-08
 
