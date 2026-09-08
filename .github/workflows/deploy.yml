@@ -11,6 +11,15 @@ on:
       package_name:
         required: true
         type: string
+      changelog_url:
+        required: false
+        type: string
+      release_url:
+        required: false
+        type: string
+      version:
+        required: false
+        type: string
   workflow_dispatch:
 
 permissions:
@@ -29,7 +38,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Download package
         if: inputs.package_url != ''
@@ -51,6 +60,13 @@ jobs:
           fi
 
           rm control.tmp
+
+      - name: Download changelog
+        if: inputs.changelog_url != '' && inputs.package_name != ''
+        run: |
+          PACKAGE_ID=$(dpkg-deb -f "repo/debs/${{ inputs.package_name }}" Package)
+          mkdir -p "repo/changelogs/$PACKAGE_ID"
+          curl -L "${{ inputs.changelog_url }}" -o "repo/changelogs/$PACKAGE_ID/CHANGELOG.md"
 
       - name: Import GPG key
         env:
