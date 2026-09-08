@@ -4,7 +4,7 @@ AppIcon.png						    dev.adrian.jb-p1lot
 AppIcon60x60@2x.png					    dev.adrian.jb-p1lot
 AppIcon60x60@3x.png					    dev.adrian.jb-p1lot
 AppIcon76x76@2x.png					    dev.adrian.jb-p1lot
-Application Support					    app.pyoncord
+Application Support					    app.pyoncord,dev.adrian.gonerino
 Applications						    dev.adrian.jb-p1lot
 Assets							    dev.adrian.jb-p1lot
 Bunny.dylib						    app.pyoncord
@@ -13,15 +13,20 @@ BunnyResources.bundle					    app.pyoncord
 Chronos.dylib						    dev.adrian.chronos
 Chronos.plist						    dev.adrian.chronos
 DynamicLibraries					    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino,dev.adrian.jb-p1lot,dev.adrian.ysrudffs
+Gonerino.bundle						    dev.adrian.gonerino
 Gonerino.dylib						    dev.adrian.gonerino
 Gonerino.plist						    dev.adrian.gonerino
-Info.plist						    dev.adrian.jb-p1lot
+Info.plist						    dev.adrian.gonerino,dev.adrian.jb-p1lot
 LaunchDaemons						    dev.adrian.jb-p1lot
 Library							    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino,dev.adrian.jb-p1lot,dev.adrian.ysrudffs
+Localizable.strings					    dev.adrian.gonerino
 MobileSubstrate						    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino,dev.adrian.jb-p1lot,dev.adrian.ysrudffs
 YouStopRotatingUpsideDownForFucksSake.dylib		    dev.adrian.ysrudffs
 YouStopRotatingUpsideDownForFucksSake.plist		    dev.adrian.ysrudffs
+de.lproj						    dev.adrian.gonerino
 dev.adrian.jb-p1lot.daemon.plist			    dev.adrian.jb-p1lot
+en.lproj						    dev.adrian.gonerino
+es.lproj						    dev.adrian.gonerino
 icon.json						    dev.adrian.jb-p1lot
 icon.png						    dev.adrian.jb-p1lot
 jb							    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino,dev.adrian.jb-p1lot,dev.adrian.ysrudffs
@@ -32,5 +37,6 @@ jb-p1lot.dylib						    dev.adrian.jb-p1lot
 jb-p1lot.plist						    dev.adrian.jb-p1lot
 libexec							    dev.adrian.jb-p1lot
 payload-base.js						    app.pyoncord
+tr.lproj						    dev.adrian.gonerino
 usr							    dev.adrian.jb-p1lot
 var							    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino,dev.adrian.jb-p1lot,dev.adrian.ysrudffs
