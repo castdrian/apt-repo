@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.7.1 - 2026-09-09
+
+### Fixes
+
+- repair iPad settings navigation, resolves #32 (313bf6f)
+
+### Documentation
+
+- refresh screenshot showcase (17c6173)
+
+### Maintenance
+
+- bump version to 1.7.1 (bb6863d)
+
 ## 1.7.0 - 2026-09-09
 
 ### Features
@@ -22,7 +36,6 @@
 
 ### Documentation
 
-- generate changelog for 1.7.0 (3837849)
 - restore Crowdin badge (fe88758)
 - simplify Crowdin badge (6d9d041)
 - refine README presentation (30b8f70)
