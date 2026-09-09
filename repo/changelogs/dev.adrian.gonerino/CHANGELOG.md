@@ -1,18 +1,14 @@
 # Changelog
 
-## 1.7.1 - 2026-09-09
+## 1.8.0 - 2026-09-09
 
 ### Fixes
 
-- repair iPad settings navigation, resolves #32 (313bf6f)
-
-### Documentation
-
-- refresh screenshot showcase (17c6173)
+- stabilize Shorts filtering and iPad settings navigation (7de502e)
 
 ### Maintenance
 
-- bump version to 1.7.1 (bb6863d)
+- bump version to 1.8.0 (f47c90c)
 
 ## 1.7.0 - 2026-09-09
 
