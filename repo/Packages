@@ -731,6 +731,25 @@ Name: jb-p1lot
 Author: adrian
 Icon: icon.png
 
+Package: dev.adrian.jb-p1lot
+Architecture: iphoneos-arm64
+Version: 0.1.4
+Priority: optional
+Section: Development
+Maintainer: adrian
+Installed-Size: 1964
+Depends: ellekit
+Filename: ./debs/dev.adrian.jb-p1lot_0.1.4_iphoneos-arm64.deb
+Size: 1406436
+MD5sum: 44c90685e2a683f8949ac69311c83abe
+SHA1: c4f0653b419f07d725a85eb115f239bebec0bf57
+SHA256: 55f944187a88ad7ab1d6645372005c47053309c962556235a01f7e60f4ebc8ba
+SHA512: fe1f7a89e58f515862b58deee9a85cc13ccf9e70896f53eb229db5e776cc4e50aa975a102fe531a2e133459e3b9647cc0f4d3694f4c1e2bf378aa0c17c474bdc
+Description: Rootless iOS MCP development bridge
+Name: jb-p1lot
+Author: adrian
+Icon: icon.png
+
 Package: dev.adrian.ysrudffs
 Architecture: iphoneos-arm64
 Version: 1.0.0
