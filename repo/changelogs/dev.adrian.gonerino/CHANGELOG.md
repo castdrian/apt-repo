@@ -1,14 +1,21 @@
 # Changelog
 
-## 1.8.0 - 2026-09-09
+## 1.8.1 - 2026-09-12
 
 ### Fixes
 
-- stabilize Shorts filtering and iPad settings navigation (7de502e)
+- stabilize feed filtering and Shorts blocking (9b93823)
+- restore Shorts blocking actions (6e96b7a)
+- stop mutating live action sheets (dc10e98)
+- deduplicate context menu block actions, resolves #34 (254fd37)
+
+### Documentation
+
+- generate changelog for 1.8.1 (d89a38b)
 
 ### Maintenance
 
-- bump version to 1.8.0 (f47c90c)
+- bump version to 1.8.1 (174caa0)
 
 ## 1.7.0 - 2026-09-09
 
