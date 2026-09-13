@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.8.2 - 2026-09-13
+
+### Fixes
+
+- align Gonerino icon with YouTube toolbar (5982799)
+
+### Maintenance
+
+- bump version to 1.8.2 (b109bd9)
+
 ## 1.8.1 - 2026-09-12
 
 ### Fixes
@@ -8,10 +18,6 @@
 - restore Shorts blocking actions (6e96b7a)
 - stop mutating live action sheets (dc10e98)
 - deduplicate context menu block actions, resolves #34 (254fd37)
-
-### Documentation
-
-- generate changelog for 1.8.1 (d89a38b)
 
 ### Maintenance
 
