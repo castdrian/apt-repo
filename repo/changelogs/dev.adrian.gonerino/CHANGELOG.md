@@ -1,14 +1,27 @@
 # Changelog
 
+## 1.8.3 - 2026-09-15
+
+### Fixes
+
+- repair scoped file access for sideloaded installs, resolves #38 (d35d753)
+- isolate shared rows from account groups (8d6c139)
+- remove shared rows from account (e8b4b6f)
+- announce shared host readiness (a4afdf5)
+- keep shared rows out of legacy account group (b99c33a)
+- share tweak settings group (842ef75)
+
+### Maintenance
+
+- bump version to 1.8.3 (80c0b44)
+- bump actions/setup-go from 6 to 7 in the github-actions group (#37) (6353324)
+- remove unused Gonerino bundle image (2f1573f)
+
 ## 1.8.2 - 2026-09-13
 
 ### Fixes
 
 - align Gonerino icon with YouTube toolbar (5982799)
-
-### Maintenance
-
-- bump version to 1.8.2 (b109bd9)
 
 ## 1.8.1 - 2026-09-12
 
