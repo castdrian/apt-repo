@@ -1,21 +1,18 @@
 # Changelog
 
-## 1.8.3 - 2026-09-15
+## 1.8.4 - 2026-09-21
 
 ### Fixes
 
-- repair scoped file access for sideloaded installs, resolves #38 (d35d753)
-- isolate shared rows from account groups (8d6c139)
-- remove shared rows from account (e8b4b6f)
-- announce shared host readiness (a4afdf5)
-- keep shared rows out of legacy account group (b99c33a)
-- share tweak settings group (842ef75)
+- make grouped hooks portable, resolves #42 (2c9e316)
+- deduplicate shared tweak group, resolves #42 (ee00ff4)
+- retain legacy tweak categories, resolves #42 (65aad26)
+- preserve grouped tweak settings, resolves #42 (d2b659d)
+- group tweak rows outside account (3f176e3)
 
 ### Maintenance
 
-- bump version to 1.8.3 (80c0b44)
-- bump actions/setup-go from 6 to 7 in the github-actions group (#37) (6353324)
-- remove unused Gonerino bundle image (2f1573f)
+- bump version to 1.8.4 (efb1891)
 
 ## 1.8.2 - 2026-09-13
 
