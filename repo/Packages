@@ -753,6 +753,26 @@ Icon: https://repo.adriancastro.dev/assets/gonerino.svg
 Depiction: https://repo.adriancastro.dev/depictions/web/?p=dev.adrian.gonerino
 SileoDepiction: https://repo.adriancastro.dev/depictions/native/dev.adrian.gonerino/depiction.json
 
+Package: dev.adrian.gonerino
+Architecture: iphoneos-arm64
+Version: 1.8.5
+Section: Tweaks
+Maintainer: Adrian Castro
+Installed-Size: 376
+Depends: ellekit
+Filename: ./debs/dev.adrian.gonerino_1.8.5_iphoneos-arm64.deb
+Size: 95044
+MD5sum: c3a3cfca81fe7cf1a00c443c75af2d8d
+SHA1: 35afaa4a7173c9106b8ecd4b729fc41f3b222903
+SHA256: ca30b1f57d4f7720c75b658c03d36454b40b57938226e61d2515ceb8bae3736c
+SHA512: 7d19361423683c6e648e43ff04fade9a52f7499e5180e17f69ef00bc90ab7fc7872c00cb2776aeec82714060f1492fa3fcb5c74f1caa08f1d21c59619ba42377
+Description: Remove videos uploaded by specific channels
+Name: Gonerino
+Author: Adrian Castro
+Icon: https://repo.adriancastro.dev/assets/gonerino.svg
+Depiction: https://repo.adriancastro.dev/depictions/web/?p=dev.adrian.gonerino
+SileoDepiction: https://repo.adriancastro.dev/depictions/native/dev.adrian.gonerino/depiction.json
+
 Package: dev.adrian.jb-p1lot
 Architecture: iphoneos-arm64
 Version: 0.1.2

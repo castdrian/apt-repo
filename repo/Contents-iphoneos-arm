@@ -37,6 +37,7 @@ jb-p1lot-daemon						    dev.adrian.jb-p1lot
 jb-p1lot.app						    dev.adrian.jb-p1lot
 jb-p1lot.dylib						    dev.adrian.jb-p1lot
 jb-p1lot.plist						    dev.adrian.jb-p1lot
+ko.lproj						    dev.adrian.gonerino
 libexec							    dev.adrian.jb-p1lot
 payload-base.js						    app.pyoncord
 tr.lproj						    dev.adrian.gonerino

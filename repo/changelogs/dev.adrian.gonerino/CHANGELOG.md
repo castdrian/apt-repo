@@ -1,18 +1,14 @@
 # Changelog
 
-## 1.8.4 - 2026-09-21
-
-### Fixes
-
-- make grouped hooks portable, resolves #42 (2c9e316)
-- deduplicate shared tweak group, resolves #42 (ee00ff4)
-- retain legacy tweak categories, resolves #42 (65aad26)
-- preserve grouped tweak settings, resolves #42 (d2b659d)
-- group tweak rows outside account (3f176e3)
+## 1.8.5 - 2026-09-22
 
 ### Maintenance
 
-- bump version to 1.8.4 (efb1891)
+- bump patch version to 1.8.5 (62c0669)
+
+### Other changes
+
+- New Crowdin updates (#43) (9c542a7)
 
 ## 1.8.2 - 2026-09-13
 
