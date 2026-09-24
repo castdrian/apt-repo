@@ -1,10 +1,14 @@
 # Changelog
 
-## 1.8.7 - 2026-09-24
+## 1.8.8 - 2026-09-24
 
-### Fixes
+### Maintenance
 
-- polish update and Discord controls, resolves #46 (e7dbb98)
+- bump patch version to 1.8.8 (48c83b7)
+
+### Other changes
+
+- New Crowdin updates (#47) (bd7adca)
 
 ## 1.8.2 - 2026-09-13
 
