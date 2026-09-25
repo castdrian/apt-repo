@@ -253,6 +253,28 @@ Name: Chronos
 Author: Adrian Castro
 Icon: https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/38/df/fa/38dffa0e-9180-af3b-0236-d62a65360c53/AppIcon-0-0-1x_U007emarketing-0-0-0-8-0-0-85-220.png/1024x1024.jpg
 
+Package: dev.adrian.dearrow
+Architecture: iphoneos-arm64
+Version: 1.0.0
+Section: Tweaks
+Maintainer: Adrian Castro
+Installed-Size: 556
+Depends: ellekit
+Conflicts: com.pixelomer.dearrow-ios
+Replaces: com.pixelomer.dearrow-ios
+Filename: ./debs/dev.adrian.dearrow_1.0.0_iphoneos-arm64.deb
+Size: 124028
+MD5sum: 27dc80c073030b744d34f1580fe26b7e
+SHA1: 277e8a723d74ba68956f17f2506f335f203bd79f
+SHA256: d6ef2f1b587eef000404c5e0b7268f6e3ec652db0c823373d1a2909801aa3911
+SHA512: ba11ed37afba2ac7c0fb190c2bf40d58368e072487657a4353931d514b254c6fb987d9b3052e506ab53cead5f1ae917bbd5611e407631320910e30fe5762043a
+Description: Bring DeArrow titles and thumbnails to YouTube for iOS
+Name: DeArrow
+Author: Adrian Castro
+Icon: https://repo.adriancastro.dev/assets/dearrow.svg
+Depiction: https://repo.adriancastro.dev/depictions/web/?p=dev.adrian.dearrow
+SileoDepiction: https://repo.adriancastro.dev/depictions/native/dev.adrian.dearrow/depiction.json
+
 Package: dev.adrian.gonerino
 Architecture: iphoneos-arm64
 Version: 0.4.3

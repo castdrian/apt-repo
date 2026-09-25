@@ -1,10 +1,10 @@
-.							    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino,dev.adrian.jb-p1lot,dev.adrian.ysrudffs
+.							    app.pyoncord,dev.adrian.chronos,dev.adrian.dearrow,dev.adrian.gonerino,dev.adrian.jb-p1lot,dev.adrian.ysrudffs
 01-shell.svg						    dev.adrian.jb-p1lot
 AppIcon.png						    dev.adrian.jb-p1lot
 AppIcon60x60@2x.png					    dev.adrian.jb-p1lot
 AppIcon60x60@3x.png					    dev.adrian.jb-p1lot
 AppIcon76x76@2x.png					    dev.adrian.jb-p1lot
-Application Support					    app.pyoncord,dev.adrian.gonerino
+Application Support					    app.pyoncord,dev.adrian.dearrow,dev.adrian.gonerino
 Applications						    dev.adrian.jb-p1lot
 Assets							    dev.adrian.jb-p1lot
 Bunny.dylib						    app.pyoncord
@@ -12,15 +12,18 @@ Bunny.plist						    app.pyoncord
 BunnyResources.bundle					    app.pyoncord
 Chronos.dylib						    dev.adrian.chronos
 Chronos.plist						    dev.adrian.chronos
-DynamicLibraries					    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino,dev.adrian.jb-p1lot,dev.adrian.ysrudffs
+DeArrow.bundle						    dev.adrian.dearrow
+DeArrow.dylib						    dev.adrian.dearrow
+DeArrow.plist						    dev.adrian.dearrow
+DynamicLibraries					    app.pyoncord,dev.adrian.chronos,dev.adrian.dearrow,dev.adrian.gonerino,dev.adrian.jb-p1lot,dev.adrian.ysrudffs
 Gonerino.bundle						    dev.adrian.gonerino
 Gonerino.dylib						    dev.adrian.gonerino
 Gonerino.plist						    dev.adrian.gonerino
 Info.plist						    dev.adrian.gonerino,dev.adrian.jb-p1lot
 LaunchDaemons						    dev.adrian.jb-p1lot
-Library							    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino,dev.adrian.jb-p1lot,dev.adrian.ysrudffs
-Localizable.strings					    dev.adrian.gonerino
-MobileSubstrate						    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino,dev.adrian.jb-p1lot,dev.adrian.ysrudffs
+Library							    app.pyoncord,dev.adrian.chronos,dev.adrian.dearrow,dev.adrian.gonerino,dev.adrian.jb-p1lot,dev.adrian.ysrudffs
+Localizable.strings					    dev.adrian.dearrow,dev.adrian.gonerino
+MobileSubstrate						    app.pyoncord,dev.adrian.chronos,dev.adrian.dearrow,dev.adrian.gonerino,dev.adrian.jb-p1lot,dev.adrian.ysrudffs
 YouStopRotatingUpsideDownForFucksSake.dylib		    dev.adrian.ysrudffs
 YouStopRotatingUpsideDownForFucksSake.plist		    dev.adrian.ysrudffs
 af.lproj						    dev.adrian.gonerino
@@ -29,10 +32,11 @@ ca.lproj						    dev.adrian.gonerino
 cs.lproj						    dev.adrian.gonerino
 da.lproj						    dev.adrian.gonerino
 de.lproj						    dev.adrian.gonerino
+dearrow.svg						    dev.adrian.dearrow
 dev.adrian.jb-p1lot.daemon.plist			    dev.adrian.jb-p1lot
-discord.png						    dev.adrian.gonerino
+discord.png						    dev.adrian.dearrow,dev.adrian.gonerino
 el.lproj						    dev.adrian.gonerino
-en.lproj						    dev.adrian.gonerino
+en.lproj						    dev.adrian.dearrow,dev.adrian.gonerino
 es.lproj						    dev.adrian.gonerino
 fi.lproj						    dev.adrian.gonerino
 fr.lproj						    dev.adrian.gonerino
@@ -44,7 +48,7 @@ icon.json						    dev.adrian.jb-p1lot
 icon.png						    dev.adrian.jb-p1lot
 it.lproj						    dev.adrian.gonerino
 ja.lproj						    dev.adrian.gonerino
-jb							    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino,dev.adrian.jb-p1lot,dev.adrian.ysrudffs
+jb							    app.pyoncord,dev.adrian.chronos,dev.adrian.dearrow,dev.adrian.gonerino,dev.adrian.jb-p1lot,dev.adrian.ysrudffs
 jb-p1lot						    dev.adrian.jb-p1lot
 jb-p1lot-daemon						    dev.adrian.jb-p1lot
 jb-p1lot.app						    dev.adrian.jb-p1lot
@@ -65,7 +69,7 @@ sv.lproj						    dev.adrian.gonerino
 tr.lproj						    dev.adrian.gonerino
 uk.lproj						    dev.adrian.gonerino
 usr							    dev.adrian.jb-p1lot
-var							    app.pyoncord,dev.adrian.chronos,dev.adrian.gonerino,dev.adrian.jb-p1lot,dev.adrian.ysrudffs
+var							    app.pyoncord,dev.adrian.chronos,dev.adrian.dearrow,dev.adrian.gonerino,dev.adrian.jb-p1lot,dev.adrian.ysrudffs
 vi.lproj						    dev.adrian.gonerino
 zh-Hans.lproj						    dev.adrian.gonerino
 zh-Hant.lproj						    dev.adrian.gonerino
