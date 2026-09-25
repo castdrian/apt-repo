@@ -1,0 +1,31 @@
+<package>
+	<id>dev.adrian.dearrow</id>
+	<name>DeArrow</name>
+	<version>1.0.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>15.0</miniOS>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>ellekit</package>
+	</dependencies>
+	<shortDescription>Community-submitted titles and thumbnails for YouTube</shortDescription>
+	<descriptionlist>
+		<description>Bring community-submitted DeArrow titles and thumbnails to YouTube for iOS.</description>
+		<description>• Replace eligible video titles and thumbnails with community branding</description>
+		<description>• Apply branding across feeds, playback, and Shorts</description>
+		<description>• Choose title and thumbnail behavior in DeArrow settings</description>
+		<description>• Support rootless ElleKit packages and sideloaded injection</description>
+	</descriptionlist>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links>
+		<link>
+			<name>Source Code</name>
+			<url>https://github.com/castdrian/DeArrow</url>
+			<iconclass>fa-brands fa-github</iconclass>
+		</link>
+	</links>
+</package>

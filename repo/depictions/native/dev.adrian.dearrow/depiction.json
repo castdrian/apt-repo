@@ -1,0 +1,57 @@
+{
+    "minVersion": "0.1",
+    "headerImage": "https://repo.adriancastro.dev/assets/Banners/RepoHeader.png",
+    "tintColor": "#ff0033",
+    "tabs": [
+        {
+            "tabname": "Details",
+            "views": [
+                {
+                    "title": "DeArrow",
+                    "useBoldText": true,
+                    "useBottomMargin": false,
+                    "class": "DepictionSubheaderView"
+                },
+                {
+                    "markdown": "Bring community-submitted DeArrow titles and thumbnails to YouTube for iOS.",
+                    "useSpacing": true,
+                    "class": "DepictionMarkdownView"
+                },
+                {
+                    "URL": "https://repo.adriancastro.dev/assets/dearrow.svg",
+                    "width": 64,
+                    "height": 64,
+                    "cornerRadius": 16,
+                    "alignment": 1,
+                    "xPadding": 4,
+                    "class": "DepictionImageView"
+                },
+                {
+                    "title": "Features",
+                    "class": "DepictionHeaderView"
+                },
+                {
+                    "markdown": "* Replace eligible video titles and thumbnails with community branding\n* Apply branding across feeds, playback, and Shorts\n* Choose title and thumbnail behavior in DeArrow settings\n* Support rootless ElleKit packages and sideloaded injection",
+                    "useSpacing": true,
+                    "class": "DepictionMarkdownView"
+                },
+                {
+                    "spacing": 16,
+                    "class": "DepictionSpacerView"
+                },
+                {
+                    "class": "DepictionTableButtonView",
+                    "title": "View Source Code",
+                    "action": "https://github.com/castdrian/DeArrow"
+                }
+            ],
+            "class": "DepictionStackView"
+        },
+        {
+            "tabname": "Changelog",
+            "views": [],
+            "class": "DepictionStackView"
+        }
+    ],
+    "class": "DepictionTabView"
+}
