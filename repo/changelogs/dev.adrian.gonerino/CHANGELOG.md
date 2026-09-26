@@ -1,14 +1,14 @@
 # Changelog
 
-## 1.8.8 - 2026-09-24
+## 1.8.9 - 2026-09-26
 
 ### Maintenance
 
-- bump patch version to 1.8.8 (48c83b7)
+- bump patch version to 1.8.9 (e745868)
 
 ### Other changes
 
-- New Crowdin updates (#47) (bd7adca)
+- New Crowdin updates (#49) (746f787)
 
 ## 1.8.2 - 2026-09-13
 
